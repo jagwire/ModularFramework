@@ -54,6 +54,7 @@ Convenience methods include:
 
 
 strategies() -- hook into Framework class to get any strategy-marked classes (typically interface implementations)
+
 getNew(interface.class, distinguisher.class, distinguisher) -- shorthand for invoking a factory to create a new object
 
 isA(.class) -- alias for -- instanceof

@@ -47,16 +47,24 @@ Classes
 ----------
 * Framework
 * InjectionFriendlyObject (IFO)
-An IFO is an abstract base class to provide access to the framework proper as well as automatically inject any injectables needed into the class. Convenience methods include:
+
+An IFO is an abstract base class to provide access to the framework proper as well as automatically inject any injectables needed into the class.
+
+Convenience methods include:
 
 
 strategies() -- hook into Framework class to get any strategy-marked classes (typically interface implementations)
 getNew(interface.class, distinguisher.class, distinguisher) -- shorthand for invoking a factory to create a new object
 
 isA(.class) -- alias for -- instanceof
+
 isAn(.class) -- alias for -- isA(.class)
+
 is(object) -- alias for -- equals()
+
 log("msg ") -- decorator for -- Logger.getLogger(getClass().getName()).warning(message);
+
 getPropertyByName(key) -- allows access to any user defined properties using a HashMap
+
 setProperty(key, value) -- allows for creation and update of any user defined properties using a hashmap
 

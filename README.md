@@ -10,8 +10,11 @@ Annotations
 * This is the entry point of the program
 
 @Injectable
+
 @AbstractFactory(interfaceType, distinguisherType)
+
 @Inject
+
 @Strategy
 
 Classes
